@@ -33,6 +33,29 @@ const Hero = () => {
           <strong className="text-primary"> Resultados visíveis em 30 dias.</strong>
         </p>
         
+        {/* Prova Social */}
+        <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-primary/20">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div className="flex flex-col items-center">
+              <div className="text-3xl font-bold text-primary mb-2">500+</div>
+              <p className="text-sm text-muted-foreground">Clientes Atendidas</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="text-3xl font-bold text-primary mb-2">95%</div>
+              <p className="text-sm text-muted-foreground">Taxa de Satisfação</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="text-3xl font-bold text-primary mb-2">⭐⭐⭐⭐⭐</div>
+              <p className="text-sm text-muted-foreground">Avaliação Google</p>
+            </div>
+          </div>
+          <div className="mt-4 pt-4 border-t border-primary/10">
+            <p className="text-sm text-center text-muted-foreground italic">
+              "Perdi 8cm de circunferência abdominal em apenas 4 semanas!" - <span className="text-primary">Maria S.</span>
+            </p>
+          </div>
+        </div>
+        
         {/* Urgency elements */}
         <div className="bg-card/90 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-primary/20">
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-center md:text-left">
