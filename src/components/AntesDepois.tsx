@@ -1,0 +1,90 @@
+import antesDepois1 from "@/assets/antes-depois-1.jpg";
+import antesDepois2 from "@/assets/antes-depois-2.jpg";
+
+const AntesDepois = () => {
+  return (
+    <section className="py-20 section-gradient">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16 animate-fade-in">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <span className="text-gradient">Resultados Reais</span>
+            <br />
+            <span className="text-foreground">de Pacientes Reais</span>
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Veja as transformações incríveis alcançadas com a Crio da Rabelo. 
+            Resultados que falam por si só.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {/* Resultado 1 */}
+          <div className="card-elegant group animate-fade-in">
+            <div className="relative overflow-hidden rounded-xl mb-4">
+              <img 
+                src={antesDepois1} 
+                alt="Antes e depois - resultado 1 da criolipolise"
+                className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
+                30 dias
+              </div>
+            </div>
+            <div className="text-center">
+              <h3 className="text-xl font-semibold mb-2">Abdômen</h3>
+              <p className="text-muted-foreground">Redução de 4cm na circunferência</p>
+              <div className="flex justify-center items-center gap-2 mt-2">
+                <span className="text-2xl">⭐</span>
+                <span className="text-sm text-primary font-medium">"Resultado surpreendente!"</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Resultado 2 */}
+          <div className="card-elegant group animate-fade-in">
+            <div className="relative overflow-hidden rounded-xl mb-4">
+              <img 
+                src={antesDepois2} 
+                alt="Antes e depois - resultado 2 da criolipolise"
+                className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
+                45 dias
+              </div>
+            </div>
+            <div className="text-center">
+              <h3 className="text-xl font-semibold mb-2">Culote & Coxas</h3>
+              <p className="text-muted-foreground">Contorno corporal definido</p>
+              <div className="flex justify-center items-center gap-2 mt-2">
+                <span className="text-2xl">⭐</span>
+                <span className="text-sm text-primary font-medium">"Exatamente o que esperava!"</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Statistics */}
+        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div className="animate-fade-in">
+            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">98%</div>
+            <div className="text-sm text-muted-foreground">Satisfação</div>
+          </div>
+          <div className="animate-fade-in">
+            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">30</div>
+            <div className="text-sm text-muted-foreground">Dias para resultado</div>
+          </div>
+          <div className="animate-fade-in">
+            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">-4cm</div>
+            <div className="text-sm text-muted-foreground">Redução média</div>
+          </div>
+          <div className="animate-fade-in">
+            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">0</div>
+            <div className="text-sm text-muted-foreground">Cirurgias necessárias</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AntesDepois;

@@ -9,34 +9,46 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 30 15% 25%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 30 15% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 30 15% 25%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Cores da clínica - #C4AB8D convertido para HSL */
+    --primary: 30 28% 68%;
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 30 28% 58%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Cor secundária - #EEE7DE convertido para HSL */
+    --secondary: 30 25% 90%;
+    --secondary-foreground: 30 15% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 30 25% 95%;
+    --muted-foreground: 30 10% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 30 25% 88%;
+    --accent-foreground: 30 15% 25%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 30 20% 85%;
+    --input: 30 20% 92%;
+    --ring: 30 28% 68%;
 
-    --radius: 0.5rem;
+    /* Gradientes elegantes */
+    --gradient-primary: linear-gradient(135deg, hsl(30 28% 68%), hsl(30 28% 58%));
+    --gradient-secondary: linear-gradient(180deg, hsl(30 25% 95%), hsl(30 25% 90%));
+    --gradient-hero: linear-gradient(135deg, hsl(30 28% 68% / 0.1), hsl(30 25% 90% / 0.3));
+
+    /* Sombras elegantes */
+    --shadow-elegant: 0 8px 32px hsl(30 28% 68% / 0.12);
+    --shadow-strong: 0 16px 48px hsl(30 28% 68% / 0.2);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +113,23 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .btn-cta {
+    @apply bg-gradient-primary text-primary-foreground font-semibold py-4 px-8 rounded-xl shadow-elegant hover:shadow-strong transition-all duration-300 hover:scale-105 animate-pulse-glow;
+  }
+  
+  .section-gradient {
+    @apply bg-gradient-secondary;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent;
+  }
+  
+  .card-elegant {
+    @apply bg-card rounded-2xl p-6 shadow-elegant border border-border/50 hover:shadow-strong transition-all duration-300;
   }
 }
