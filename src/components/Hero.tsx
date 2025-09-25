@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import equipamentoCrio from "@/assets/equipamento-crio.jpg";
+import antesDepois1 from "@/assets/antes-depois-1.jpg";
+import antesDepois2 from "@/assets/antes-depois-2.jpg";
 
 const Hero = () => {
   return (
@@ -26,6 +28,29 @@ const Hero = () => {
             <br />
             <span className="text-foreground">Sem Cirurgia</span>
           </h1>
+          
+          {/* Fotos Antes e Depois no Hero */}
+          <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 mb-6 border border-primary/20">
+            <h3 className="text-lg font-semibold text-center mb-4 text-primary">Resultados Reais dos Nossos Clientes</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="text-center">
+                <img 
+                  src={antesDepois1} 
+                  alt="Resultado antes e depois da criolipolise - Cliente 1"
+                  className="w-full h-48 object-cover rounded-lg mb-2"
+                />
+                <p className="text-sm text-muted-foreground">Cliente perdeu 6cm em 4 semanas</p>
+              </div>
+              <div className="text-center">
+                <img 
+                  src={antesDepois2} 
+                  alt="Resultado antes e depois da criolipolise - Cliente 2"
+                  className="w-full h-48 object-cover rounded-lg mb-2"
+                />
+                <p className="text-sm text-muted-foreground">Cliente perdeu 8cm em 5 semanas</p>
+              </div>
+            </div>
+          </div>
         </div>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
