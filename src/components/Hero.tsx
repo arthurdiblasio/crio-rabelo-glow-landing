@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import equipamentoCrio from "@/assets/equipamento-crio.jpg";
-import antesDepois1 from "@/assets/antes-depois-1.jpeg";
-import antesDepois2 from "@/assets/antes-depois-1.jpeg";
+import antesDepois1 from "@/assets/antes-depois-real-1.jpg";
+import antesDepois2 from "@/assets/antes-depois-real-2.jpg";
+import logo from "@/assets/logo.png";
 
 const Hero = () => {
   return (
@@ -18,7 +19,16 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto animate-fade-in">
         <div className="mb-6">
-          <img className="w-full h-48 object-cover rounded-lg" src="src\assets\logo.png" alt="Logo do Studio Fernanda Rabelo" />
+          {/* Logo do Studio */}
+          <div className="mb-8">
+            <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-4 inline-block border border-primary/20">
+              <img
+                src={logo}
+                alt="Studio Fernanda Rabelo - Beleza e Saúde"
+                className="h-20 w-auto object-contain"
+              />
+            </div>
+          </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="text-gradient">Crio da Rabelo</span>
@@ -38,7 +48,7 @@ const Hero = () => {
                   alt="Resultado antes e depois da criolipolise - Cliente 1"
                   className="w-full h-48 object-cover rounded-lg mb-2"
                 />
-                <p className="text-sm text-muted-foreground">Cliente perdeu 6cm em 4 semanas</p>
+                <p className="text-sm text-muted-foreground">Resultados reais em poucas semanas</p>
               </div>
               <div className="text-center">
                 <img
@@ -46,7 +56,7 @@ const Hero = () => {
                   alt="Resultado antes e depois da criolipolise - Cliente 2"
                   className="w-full h-48 object-cover rounded-lg mb-2"
                 />
-                <p className="text-sm text-muted-foreground">Cliente perdeu 8cm em 5 semanas</p>
+                <p className="text-sm text-muted-foreground">Transformação visível e duradoura</p>
               </div>
             </div>
           </div>
@@ -71,25 +81,6 @@ const Hero = () => {
             <div className="flex flex-col items-center">
               <div className="text-3xl font-bold text-primary mb-2">⭐⭐⭐⭐⭐</div>
               <p className="text-sm text-muted-foreground">Avaliação Google</p>
-            </div>
-          </div>
-          <div className="mt-4 pt-4 border-t border-primary/10">
-            <p className="text-sm text-center text-muted-foreground italic">
-              "Perdi 8cm de circunferência abdominal em apenas 4 semanas!" - <span className="text-primary">Maria S.</span>
-            </p>
-          </div>
-        </div>
-
-        {/* Urgency elements */}
-        <div className="bg-card/90 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-primary/20">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-center md:text-left">
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
-              <span className="text-sm font-medium">Apenas 5 vagas restantes</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
-              <span className="text-sm font-medium">Oferta válida até 30/09</span>
             </div>
           </div>
         </div>
