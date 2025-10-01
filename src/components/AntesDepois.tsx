@@ -1,5 +1,5 @@
-import antesDepois1 from "@/assets/antes-depois-1.jpg";
-import antesDepois2 from "@/assets/antes-depois-2.jpg";
+import antesDepois1 from "@/assets/antes-depois-1.jpeg";
+import antesDepois2 from "@/assets/antes-depois-1.jpeg";
 
 const AntesDepois = () => {
   return (
@@ -12,7 +12,7 @@ const AntesDepois = () => {
             <span className="text-foreground">de Pacientes Reais</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Veja as transformações incríveis alcançadas com a Crio da Rabelo. 
+            Veja as transformações incríveis alcançadas com a Crio da Rabelo.
             Resultados que falam por si só.
           </p>
         </div>
@@ -21,8 +21,8 @@ const AntesDepois = () => {
           {/* Resultado 1 */}
           <div className="card-elegant group animate-fade-in">
             <div className="relative overflow-hidden rounded-xl mb-4">
-              <img 
-                src={antesDepois1} 
+              <img
+                src={antesDepois1}
                 alt="Antes e depois - resultado 1 da criolipolise"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
               />
@@ -43,8 +43,8 @@ const AntesDepois = () => {
           {/* Resultado 2 */}
           <div className="card-elegant group animate-fade-in">
             <div className="relative overflow-hidden rounded-xl mb-4">
-              <img 
-                src={antesDepois2} 
+              <img
+                src={antesDepois2}
                 alt="Antes e depois - resultado 2 da criolipolise"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
               />
