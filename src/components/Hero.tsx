@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import equipamentoCrio from "@/assets/equipamento-crio.jpg";
 import antesDepois1 from "@/assets/antes-depois-1.jpg";
 import antesDepois2 from "@/assets/antes-depois-2.jpg";
+import logo from "@/assets/logo.png";
 
 const Hero = () => {
   return (
@@ -20,9 +21,12 @@ const Hero = () => {
         <div className="mb-6">
           {/* Logo do Studio */}
           <div className="mb-8">
-            <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 inline-block border border-primary/20">
-              <p className="text-2xl font-bold text-primary">CRIO DA RABELO</p>
-              <p className="text-sm text-muted-foreground">Clínica de Estética</p>
+            <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-4 inline-block border border-primary/20">
+              <img 
+                src={logo} 
+                alt="Studio Fernanda Rabelo - Beleza e Saúde" 
+                className="h-20 w-auto object-contain"
+              />
             </div>
           </div>
           
