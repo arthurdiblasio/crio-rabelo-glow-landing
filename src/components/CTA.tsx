@@ -6,18 +6,6 @@ const CTA = () => {
     <section className="py-20 section-gradient">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Urgency Header */}
-          <div className="bg-destructive/10 border border-destructive/20 rounded-2xl p-6 mb-12 animate-fade-in">
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <Clock className="w-6 h-6 text-destructive animate-pulse" />
-              <span className="text-destructive font-bold text-lg">ATENÇÃO: VAGAS LIMITADAS!</span>
-            </div>
-            <p className="text-destructive/80 text-sm">
-              Esta oferta exclusiva da Crio da Rabelo tem limite de vagas. 
-              Não perca a oportunidade de transformar seu corpo!
-            </p>
-          </div>
-
           {/* Main CTA */}
           <div className="animate-fade-in">
             <h2 className="text-4xl md:text-6xl font-bold mb-6">
@@ -32,27 +20,6 @@ const CTA = () => {
             </p>
           </div>
 
-          {/* Scarcity Indicators */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            <div className="card-elegant text-center animate-fade-in">
-              <Users className="w-8 h-8 text-primary mx-auto mb-3" />
-              <div className="font-bold text-2xl text-destructive mb-1">5</div>
-              <div className="text-sm text-muted-foreground">Vagas restantes</div>
-            </div>
-            
-            <div className="card-elegant text-center animate-fade-in">
-              <Clock className="w-8 h-8 text-primary mx-auto mb-3" />
-              <div className="font-bold text-2xl text-primary mb-1">48h</div>
-              <div className="text-sm text-muted-foreground">Para agendar</div>
-            </div>
-            
-            <div className="card-elegant text-center animate-fade-in">
-              <TrendingDown className="w-8 h-8 text-primary mx-auto mb-3" />
-              <div className="font-bold text-2xl text-primary mb-1">-25%</div>
-              <div className="text-sm text-muted-foreground">Redução garantida</div>
-            </div>
-          </div>
-
           {/* Primary CTA Button */}
           <div className="animate-fade-in mb-8">
             <Button 
@@ -63,17 +30,6 @@ const CTA = () => {
             </Button>
             <p className="text-sm text-muted-foreground">
               👥 Mais de 1.000 pacientes já transformaram seus corpos
-            </p>
-          </div>
-
-          {/* Guarantee */}
-          <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-6 border border-primary/20 animate-fade-in">
-            <h3 className="text-xl font-semibold mb-3 text-primary">
-              🛡️ Garantia de Satisfação
-            </h3>
-            <p className="text-muted-foreground text-sm">
-              Se você não ficar 100% satisfeita com os resultados, 
-              devolvemos seu investimento. Essa é nossa confiança na Crio da Rabelo.
             </p>
           </div>
 

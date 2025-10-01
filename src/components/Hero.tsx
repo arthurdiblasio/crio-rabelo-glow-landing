@@ -18,9 +18,14 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto animate-fade-in">
         <div className="mb-6">
-          <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">
-            🔥 OFERTA EXCLUSIVA
-          </span>
+          {/* Logo do Studio */}
+          <div className="mb-8">
+            <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 inline-block border border-primary/20">
+              <p className="text-2xl font-bold text-primary">CRIO DA RABELO</p>
+              <p className="text-sm text-muted-foreground">Clínica de Estética</p>
+            </div>
+          </div>
+          
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="text-gradient">Crio da Rabelo</span>
             <br />
@@ -78,20 +83,6 @@ const Hero = () => {
             <p className="text-sm text-center text-muted-foreground italic">
               "Perdi 8cm de circunferência abdominal em apenas 4 semanas!" - <span className="text-primary">Maria S.</span>
             </p>
-          </div>
-        </div>
-        
-        {/* Urgency elements */}
-        <div className="bg-card/90 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-primary/20">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-center md:text-left">
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
-              <span className="text-sm font-medium">Apenas 5 vagas restantes</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
-              <span className="text-sm font-medium">Oferta válida até 30/09</span>
-            </div>
           </div>
         </div>
         
