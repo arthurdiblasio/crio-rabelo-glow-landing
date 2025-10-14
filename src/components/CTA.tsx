@@ -13,24 +13,24 @@ const CTA = () => {
               <br />
               <span className="text-foreground">Hoje Mesmo!</span>
             </h2>
-            
+
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Agende sua <strong className="text-primary">avaliação gratuita</strong> e 
+              Agende sua <strong className="text-primary">avaliação gratuita</strong> e
               comece sua jornada para o corpo dos seus sonhos com a Crio da Rabelo.
             </p>
           </div>
 
           {/* Primary CTA Button */}
           <div className="animate-fade-in mb-8">
-            <Button 
+            <Button
               size="lg"
               className="btn-cta text-xl px-16 py-8 mb-4"
-              onClick={() => window.open('https://wa.me/5531972416039', '_blank')}
+              onClick={() => window.open('https://wa.me/5531972416039?text=Olá! Quero agendar minha avaliação', '_blank')}
             >
               📞 Agendar minha avaliação
             </Button>
             <p className="text-sm text-muted-foreground">
-              👥 Mais de 1.000 pacientes já transformaram seus corpos
+              👥 Mais de 100 pacientes já transformaram seus corpos
             </p>
           </div>
 
@@ -40,9 +40,15 @@ const CTA = () => {
               📞 Entre em contato agora mesmo:
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-sm">
-              <span className="font-medium">📱 WhatsApp: (11) 99999-9999</span>
+              <span className="font-medium">
+                <a href="https://wa.me/5531972416039?text=Olá! Quero agendar minha avaliação', '_blank'">
+                  📱 WhatsApp: (31) 97241-6039
+                </a>
+              </span>
               <span className="hidden sm:block text-muted-foreground">•</span>
-              <span className="font-medium">📍 Clínica Estética Rabelo</span>
+              <span className="font-medium"><a href="wwww.studiofernandarabelo.com.br', '_blank'">
+                📍Site: wwww.studiofernandarabelo.com.br
+              </a></span>
             </div>
           </div>
         </div>
