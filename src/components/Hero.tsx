@@ -20,14 +20,14 @@ const Hero = () => {
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto animate-fade-in">
         <div className="mb-6">
           {/* Logo do Studio */}
-          <div className="mb-8">
-            <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-4 inline-block border border-primary/20">
-              <img
-                src={logo}
-                alt="Studio Fernanda Rabelo - Beleza e Saúde"
-                className="h-20 w-auto object-contain"
-              />
-            </div>
+          <div className="mb-4 mt-2 flex justify-center">
+            {/* <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-4 inline-block border border-primary/20"> */}
+            <img
+              src={logo}
+              alt="Studio Fernanda Rabelo - Beleza e Saúde"
+              className="h-40 w-auto object-contain"
+            />
+            {/* </div> */}
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
@@ -71,7 +71,7 @@ const Hero = () => {
         <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-primary/20">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
             <div className="flex flex-col items-center">
-              <div className="text-3xl font-bold text-primary mb-2">500+</div>
+              <div className="text-3xl font-bold text-primary mb-2">100+</div>
               <p className="text-sm text-muted-foreground">Clientes Atendidas</p>
             </div>
             <div className="flex flex-col items-center">
@@ -88,13 +88,15 @@ const Hero = () => {
         {/* CTA Button */}
         <Button
           size="lg"
+          onClick={() => window.open("https://wa.me/553172416039?text=Olá! Quero agendar minha avaliação", "_blank")}
+
           className="btn-cta text-lg px-12 py-6 mb-8"
         >
-          🚀 QUERO MINHA VAGA AGORA
+          🚀 QUERO AGENDAR MINHA AVALIAÇÃO
         </Button>
 
-        <p className="text-sm text-muted-foreground">
-          ✅ Consulta e avaliação gratuita • ✅ Resultados garantidos • ✅ Tecnologia FDA aprovada
+        <p className="text-sm pb-4 text-muted-foreground">
+          ✅ Consulta e avaliação gratuita • ✅ Espaço Aconchegante • ✅ Ótima Localização (Ao lado do ViaShopping)
         </p>
       </div>
     </section>

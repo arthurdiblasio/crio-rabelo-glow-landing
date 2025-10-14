@@ -1,4 +1,5 @@
 import { CheckCircle, Snowflake, Zap, Shield } from "lucide-react";
+import { Button } from "./ui/button";
 
 const SobreTratamento = () => {
   const beneficios = [
@@ -37,9 +38,15 @@ const SobreTratamento = () => {
             <br />
             <span className="text-foreground">a Crio da Rabelo?</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A criolipolise é a única tecnologia não invasiva capaz de eliminar 
-            células de gordura definitivamente através do congelamento controlado.
+          <p className="text-xl text-muted-foreground max-w-6xl mx-auto">
+            A Crio da Rabelo é um protocolo exclusivo de criolipólise, desenvolvido
+            ao longo de 2 anos de estudos e aprimoramento com o mentor Fábio Borges, em São Paulo.
+          </p>
+
+          <p className="text-xl text-muted-foreground max-w-6xl mx-auto mt-4">
+            Criada com base em técnicas avançadas e personalizadas, a Crio da Rabelo tem como
+            objetivo potencializar os resultados na redução de gordura localizada, proporcionando resultados
+            reais e seguros.
           </p>
         </div>
 
@@ -84,7 +91,7 @@ const SobreTratamento = () => {
               <span className="text-gradient">Está pronta para a transformação?</span>
             </h3>
             <p className="text-muted-foreground mb-6">
-              Agende sua avaliação gratuita e descubra como a Crio da Rabelo 
+              Agende sua avaliação gratuita e descubra como a Crio da Rabelo
               pode transformar seu corpo de forma definitiva.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -102,6 +109,16 @@ const SobreTratamento = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="text-center mt-8 animate-fade-in">
+          <Button
+            size="lg"
+            onClick={() => window.open("https://wa.me/553172416039?text=Olá! Quero agendar minha avaliação", "_blank")}
+            className="btn-cta text-lg px-12 py-6"
+          >
+            🚀 QUERO AGENDAR MINHA AVALIAÇÃO
+          </Button>
         </div>
       </div>
     </section>

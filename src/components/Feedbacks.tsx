@@ -16,15 +16,15 @@ const Feedbacks = () => {
           {/* Imagens de Feedbacks */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <div className="card-elegant overflow-hidden animate-fade-in">
-              <img 
-                src={feedback1} 
+              <img
+                src={feedback1}
                 alt="Depoimento de cliente satisfeita - mensagem WhatsApp"
                 className="w-full h-auto object-cover"
               />
             </div>
             <div className="card-elegant overflow-hidden animate-fade-in">
-              <img 
-                src={feedback2} 
+              <img
+                src={feedback2}
                 alt="Depoimento de cliente satisfeita - mensagem Instagram"
                 className="w-full h-auto object-cover"
               />
@@ -33,17 +33,22 @@ const Feedbacks = () => {
 
           {/* Vídeos de Feedbacks */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="card-elegant overflow-hidden animate-fade-in">
+            {/* <div className="card-elegant overflow-hidden animate-fade-in">
               <div className="aspect-video bg-muted flex items-center justify-center">
                 <div className="text-center p-8">
                   <div className="text-6xl mb-4">🎥</div>
                   <p className="text-sm text-muted-foreground">
                     Vídeo depoimento 1<br />
-                    (Adicione o link do seu vídeo aqui)
-                  </p>
+                                      </p>
                 </div>
               </div>
-            </div>
+            </div> */}
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/shorts/D8adzsFh1fE"
+              title="YouTube video player"
+            ></iframe>
             <div className="card-elegant overflow-hidden animate-fade-in">
               <div className="aspect-video bg-muted flex items-center justify-center">
                 <div className="text-center p-8">
