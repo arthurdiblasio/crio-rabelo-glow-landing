@@ -1,4 +1,4 @@
-import feedback1 from "@/assets/feedback-1.jpg";
+import feedback1 from "@/assets/videos/feedback-crio-da-rabelo.mp4";
 import feedback2 from "@/assets/feedback-2.jpg";
 
 const Feedbacks = () => {
@@ -34,13 +34,22 @@ const Feedbacks = () => {
           {/* Vídeos de Feedbacks */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="card-elegant overflow-hidden animate-fade-in">
-              <iframe
+              {/* <iframe
                 className="w-full aspect-video"
                 src="https://www.youtube.com/embed/D8adzsFh1fE"
                 title="Depoimento de cliente - Vídeo 1"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-              ></iframe>
+              ></iframe> */}
+              <video
+                width="100%"
+                controls
+                controlsList="nodownload noremoteplayback"
+                preload="metadata"
+                className="w-full aspect-video">
+                <source src={feedback1} type="video/mp4" />
+                Seu navegador não suporta vídeos HTML5.
+              </video>
             </div>
             <div className="card-elegant overflow-hidden animate-fade-in">
               <div className="aspect-video bg-muted flex items-center justify-center">
