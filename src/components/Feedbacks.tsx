@@ -33,22 +33,15 @@ const Feedbacks = () => {
 
           {/* Vídeos de Feedbacks */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* <div className="card-elegant overflow-hidden animate-fade-in">
-              <div className="aspect-video bg-muted flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="text-6xl mb-4">🎥</div>
-                  <p className="text-sm text-muted-foreground">
-                    Vídeo depoimento 1<br />
-                                      </p>
-                </div>
-              </div>
-            </div> */}
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/shorts/D8adzsFh1fE"
-              title="YouTube video player"
-            ></iframe>
+            <div className="card-elegant overflow-hidden animate-fade-in">
+              <iframe
+                className="w-full aspect-video"
+                src="https://www.youtube.com/embed/D8adzsFh1fE"
+                title="Depoimento de cliente - Vídeo 1"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
             <div className="card-elegant overflow-hidden animate-fade-in">
               <div className="aspect-video bg-muted flex items-center justify-center">
                 <div className="text-center p-8">
