@@ -7,17 +7,17 @@ import feedbackimage4 from "@/assets/feedback-4.jpg";
 const Feedbacks = () => {
   return (
     <section className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-2 md:px-4">
         <div className="max-w-8xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 px-2">
             <span className="text-gradient">Depoimentos Reais</span>
           </h2>
-          <p className="text-xl text-muted-foreground text-center mb-12">
+          <p className="text-xl text-muted-foreground text-center mb-12 px-2">
             Veja o que nossas clientes dizem sobre a Crio da Rabelo
           </p>
 
           {/* Imagens de Feedbacks */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-16 px-2 md:px-0">
             <div className="card-elegant overflow-hidden animate-fade-in">
               <img
                 src={feedbackimage1}
@@ -49,8 +49,8 @@ const Feedbacks = () => {
           </div>
 
           {/* Vídeos de Feedbacks */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 container mx-auto px-4">
-            <div className="card-elegant overflow-hidden animate-fade-in max-w-8xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 px-2 md:px-0">
+            <div className="card-elegant overflow-hidden animate-fade-in">
               {/* <iframe
                 className="w-full aspect-video"
                 src="https://www.youtube.com/embed/D8adzsFh1fE?modestbranding=1&rel=0&showinfo=0"
