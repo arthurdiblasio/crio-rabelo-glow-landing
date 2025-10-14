@@ -25,8 +25,9 @@ const CTA = () => {
             <Button 
               size="lg"
               className="btn-cta text-xl px-16 py-8 mb-4"
+              onClick={() => window.open('https://wa.me/5531972416039', '_blank')}
             >
-              📞 QUERO AGENDAR MINHA VAGA AGORA
+              📞 Agendar minha avaliação
             </Button>
             <p className="text-sm text-muted-foreground">
               👥 Mais de 1.000 pacientes já transformaram seus corpos
