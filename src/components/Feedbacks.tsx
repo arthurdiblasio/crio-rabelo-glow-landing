@@ -49,8 +49,9 @@ const Feedbacks = () => {
           </div>
 
           {/* Vídeos de Feedbacks */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 px-2 md:px-0">
-            <div className="card-elegant overflow-hidden animate-fade-in">
+          {/* Para mais vídeos, trocar o cols-1 por cols-2 */}
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-4 md:gap-8 px-2 md:px-0">
+            <div className="overflow-hidden animate-fade-in">
               {/* <iframe
                 className="w-full aspect-video"
                 src="https://www.youtube.com/embed/D8adzsFh1fE?modestbranding=1&rel=0&showinfo=0"
@@ -68,7 +69,7 @@ const Feedbacks = () => {
                 Seu navegador não suporta vídeos HTML5.
               </video>
             </div>
-            <div className="card-elegant overflow-hidden animate-fade-in">
+            {/* <div className="overflow-hidden animate-fade-in">
               <div className="aspect-video bg-muted flex items-center justify-center">
                 <div className="text-center p-8">
                   <div className="text-6xl mb-4">🎥</div>
@@ -78,7 +79,7 @@ const Feedbacks = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
