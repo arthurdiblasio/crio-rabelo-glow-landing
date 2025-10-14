@@ -36,10 +36,9 @@ const Feedbacks = () => {
             <div className="card-elegant overflow-hidden animate-fade-in">
               <iframe
                 className="w-full aspect-video"
-                src="https://www.youtube.com/embed/D8adzsFh1fE"
+                src="https://www.youtube.com/embed/D8adzsFh1fE?modestbranding=1&rel=0&showinfo=0"
                 title="Depoimento de cliente - Vídeo 1"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
               ></iframe>
             </div>
             <div className="card-elegant overflow-hidden animate-fade-in">
