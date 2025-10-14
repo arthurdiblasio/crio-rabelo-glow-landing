@@ -5,7 +5,7 @@ const Feedbacks = () => {
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-8xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
             <span className="text-gradient">Depoimentos Reais</span>
           </h2>
@@ -32,8 +32,8 @@ const Feedbacks = () => {
           </div>
 
           {/* Vídeos de Feedbacks */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="card-elegant overflow-hidden animate-fade-in">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 container mx-auto px-4">
+            <div className="card-elegant overflow-hidden animate-fade-in max-w-8xl mx-auto">
               {/* <iframe
                 className="w-full aspect-video"
                 src="https://www.youtube.com/embed/D8adzsFh1fE?modestbranding=1&rel=0&showinfo=0"
