@@ -104,7 +104,7 @@ const Hero = () => {
         </div>
 
         {/* CTA Button */}
-        <div className="animate-fade-in mb-8">
+        <div className="animate-fade-in flex justify-center mt-12">
           <Button
             size="lg"
             onClick={() => window.open("https://wa.me/553172416039?text=Olá! Quero agendar minha avaliação", "_blank")}
@@ -113,7 +113,6 @@ const Hero = () => {
             Agendar minha avaliação
           </Button>
         </div>
-
         <p className="text-sm pb-4 text-muted-foreground">
           ✅ Consulta e avaliação gratuita • ✅ Espaço Aconchegante • ✅ Ótima Localização (Ao lado do ViaShopping)
         </p>
