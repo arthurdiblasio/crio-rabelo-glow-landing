@@ -27,27 +27,27 @@ const CTA = () => {
               className="btn-cta text-xl px-16 py-8 mb-4"
               onClick={() => window.open('https://wa.me/5531972416039?text=Olá! Quero agendar minha avaliação', '_blank')}
             >
-              📞 Agendar minha avaliação
+              Agendar minha avaliação
             </Button>
             <p className="text-sm text-muted-foreground">
-              👥 Mais de 100 pacientes já transformaram seus corpos
+              Mais de 100 pacientes já transformaram seus corpos
             </p>
           </div>
 
           {/* Contact Info */}
           <div className="mt-12 text-center animate-fade-in">
             <p className="text-muted-foreground mb-2">
-              📞 Entre em contato agora mesmo:
+              Entre em contato agora mesmo:
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-sm">
               <span className="font-medium">
                 <a href="https://wa.me/5531972416039?text=Olá! Quero agendar minha avaliação', '_blank'">
-                  📱 WhatsApp: (31) 97241-6039
+                  WhatsApp: (31) 97241-6039
                 </a>
               </span>
               <span className="hidden sm:block text-muted-foreground">•</span>
               <span className="font-medium"><a href="wwww.studiofernandarabelo.com.br', '_blank'">
-                📍Site: wwww.studiofernandarabelo.com.br
+                Site: wwww.studiofernandarabelo.com.br
               </a></span>
             </div>
           </div>

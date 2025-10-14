@@ -90,7 +90,7 @@ const AntesDepois = () => {
           className="btn-cta text-xl px-16 py-8"
           onClick={() => window.open('https://wa.me/5531972416039?text=Olá! Quero agendar minha avaliação', '_blank')}
         >
-          📞 Agendar minha avaliação
+          Agendar minha avaliação
         </Button>
       </div>
     </section>

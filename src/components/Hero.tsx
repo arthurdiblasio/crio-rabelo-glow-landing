@@ -8,45 +8,63 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-hero">
+      {/* <div className="absolute inset-0 bg-gradient-hero">
         <img
           src={equipamentoCrio}
           alt="Equipamento de criolipolise moderno"
           className="w-full h-full object-cover opacity-20"
         />
-      </div>
+      </div> */}
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto animate-fade-in">
+      <div className="relative z-10 text-center px-4 max-w-7xl mx-auto animate-fade-in">
         <div className="mb-6">
           {/* Logo do Studio */}
-          <div className="mb-4 mt-2 flex justify-center">
-            {/* <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-4 inline-block border border-primary/20"> */}
+          {/* <div className="mb-4 mt-2 flex justify-center">
             <img
               src={logo}
               alt="Studio Fernanda Rabelo - Beleza e Saúde"
-              className="h-40 w-auto object-contain"
+              className="h-21 w-auto object-contain"
             />
-            {/* </div> */}
+          </div> */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-2 px-2 md:px-0">
+            <div className="overflow-hidden animate-fade-in mb-4">
+              <div className="inset-0 bg-gradient-hero">
+                <img
+                  src={equipamentoCrio}
+                  alt="Equipamento de criolipolise moderno"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div className="overflow-hidden animate-fade-in flex flex-col justify-center items-center">
+              <h1 className="text-5xl md:text-7xl font-bold">
+                <div className="mb-10 mt-2 flex justify-center">
+                  <img
+                    src={logo}
+                    alt="Studio Fernanda Rabelo - Beleza e Saúde"
+                    className="h-21 w-auto"
+                  />
+                </div>
+                <span className="text-gradient">Crio da Rabelo</span>
+                <br />
+                <span className="text-foreground">Elimine Gordura</span>
+                <br />
+                <span className="text-foreground">Sem Cirurgia</span>
+              </h1>
+            </div>
+
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="text-gradient">Crio da Rabelo</span>
-            <br />
-            <span className="text-foreground">Elimine Gordura</span>
-            <br />
-            <span className="text-foreground">Sem Cirurgia</span>
-          </h1>
-
           {/* Fotos Antes e Depois no Hero */}
-          <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 mb-6 border border-primary/20">
-            <h3 className="text-lg font-semibold text-center mb-4 text-primary">Resultados Reais dos Nossos Clientes</h3>
+          <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 mb-2 border border-primary/20">
+            <h3 className="text-lg font-semibold text-center mb-6 text-primary">Resultados Reais dos Nossos Clientes</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="text-center">
                 <img
                   src={antesDepois1}
                   alt="Resultado antes e depois da criolipolise - Cliente 1"
-                  className="w-full h-48 object-cover rounded-lg mb-2"
+                  className="w-full h-49 object-cover rounded-lg mb-2"
                 />
                 <p className="text-sm text-muted-foreground">Resultados reais em poucas semanas</p>
               </div>
@@ -54,7 +72,7 @@ const Hero = () => {
                 <img
                   src={antesDepois2}
                   alt="Resultado antes e depois da criolipolise - Cliente 2"
-                  className="w-full h-48 object-cover rounded-lg mb-2"
+                  className="w-full h-49 object-cover rounded-lg mb-2"
                 />
                 <p className="text-sm text-muted-foreground">Transformação visível e duradoura</p>
               </div>
@@ -86,13 +104,15 @@ const Hero = () => {
         </div>
 
         {/* CTA Button */}
-        <Button
-          size="lg"
-          onClick={() => window.open("https://wa.me/553172416039?text=Olá! Quero agendar minha avaliação", "_blank")}
-          className="btn-cta text-lg px-12 py-6 mb-8"
-        >
-          📞 Agendar minha avaliação
-        </Button>
+        <div className="animate-fade-in mb-8">
+          <Button
+            size="lg"
+            onClick={() => window.open("https://wa.me/553172416039?text=Olá! Quero agendar minha avaliação", "_blank")}
+            className="btn-cta text-lg px-12 py-6 mb-8"
+          >
+            Agendar minha avaliação
+          </Button>
+        </div>
 
         <p className="text-sm pb-4 text-muted-foreground">
           ✅ Consulta e avaliação gratuita • ✅ Espaço Aconchegante • ✅ Ótima Localização (Ao lado do ViaShopping)
