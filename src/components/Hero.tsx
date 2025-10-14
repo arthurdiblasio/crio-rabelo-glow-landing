@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import equipamentoCrio from "@/assets/equipamento-crio.jpg";
 import antesDepois1 from "@/assets/antes-depois-real-1.jpg";
 import antesDepois2 from "@/assets/antes-depois-real-2.jpg";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-new.png";
 
 const Hero = () => {
   return (
@@ -89,10 +89,9 @@ const Hero = () => {
         <Button
           size="lg"
           onClick={() => window.open("https://wa.me/553172416039?text=Olá! Quero agendar minha avaliação", "_blank")}
-
           className="btn-cta text-lg px-12 py-6 mb-8"
         >
-          🚀 QUERO AGENDAR MINHA AVALIAÇÃO
+          📞 Agendar minha avaliação
         </Button>
 
         <p className="text-sm pb-4 text-muted-foreground">

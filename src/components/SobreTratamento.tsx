@@ -117,7 +117,7 @@ const SobreTratamento = () => {
             onClick={() => window.open("https://wa.me/553172416039?text=Olá! Quero agendar minha avaliação", "_blank")}
             className="btn-cta text-lg px-12 py-6"
           >
-            🚀 QUERO AGENDAR MINHA AVALIAÇÃO
+            📞 Agendar minha avaliação
           </Button>
         </div>
       </div>
