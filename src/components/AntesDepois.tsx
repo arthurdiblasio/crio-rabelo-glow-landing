@@ -1,5 +1,6 @@
 import antesDepois1 from "@/assets/antes-depois-1.jpeg";
 import antesDepois2 from "@/assets/antes-depois-1.jpeg";
+import { Button } from "./ui/button";
 
 const AntesDepois = () => {
   return (
@@ -26,9 +27,9 @@ const AntesDepois = () => {
                 alt="Antes e depois - resultado 1 da criolipolise"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
-                30 dias
-              </div>
+              {/* <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
+                90 dias
+              </div> */}
             </div>
             <div className="text-center">
               <h3 className="text-xl font-semibold mb-2">Abdômen</h3>
@@ -48,9 +49,9 @@ const AntesDepois = () => {
                 alt="Antes e depois - resultado 2 da criolipolise"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
+              {/* <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
                 45 dias
-              </div>
+              </div> */}
             </div>
             <div className="text-center">
               <h3 className="text-xl font-semibold mb-2">Culote & Coxas</h3>
@@ -71,7 +72,7 @@ const AntesDepois = () => {
           </div>
           <div className="animate-fade-in">
             <div className="text-3xl md:text-4xl font-bold text-primary mb-2">30</div>
-            <div className="text-sm text-muted-foreground">Dias para resultado</div>
+            <div className="text-sm text-muted-foreground">Dias para começar a ver os resultados</div>
           </div>
           <div className="animate-fade-in">
             <div className="text-3xl md:text-4xl font-bold text-primary mb-2">-4cm</div>
@@ -82,6 +83,15 @@ const AntesDepois = () => {
             <div className="text-sm text-muted-foreground">Cirurgias necessárias</div>
           </div>
         </div>
+      </div>
+      <div className="animate-fade-in flex justify-center mt-12">
+        <Button
+          size="lg"
+          className="btn-cta text-xl px-16 py-8"
+          onClick={() => window.open('https://wa.me/5531972416039?text=Olá! Quero agendar minha avaliação', '_blank')}
+        >
+          📞 Agendar minha avaliação
+        </Button>
       </div>
     </section>
   );
