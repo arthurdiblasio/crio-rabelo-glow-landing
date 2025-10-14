@@ -1,5 +1,8 @@
-import feedback1 from "@/assets/videos/feedback-crio-da-rabelo.mp4";
-import feedback2 from "@/assets/feedback-2.jpg";
+import feedbackvideo1 from "@/assets/videos/feedback-crio-da-rabelo.mp4";
+import feedbackimage1 from "@/assets/feedback-1.jpg";
+import feedbackimage2 from "@/assets/feedback-2.jpg";
+import feedbackimage3 from "@/assets/feedback-3.jpg";
+import feedbackimage4 from "@/assets/feedback-4.jpg";
 
 const Feedbacks = () => {
   return (
@@ -17,14 +20,28 @@ const Feedbacks = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <div className="card-elegant overflow-hidden animate-fade-in">
               <img
-                src={feedback1}
+                src={feedbackimage1}
                 alt="Depoimento de cliente satisfeita - mensagem WhatsApp"
                 className="w-full h-auto object-cover"
               />
             </div>
             <div className="card-elegant overflow-hidden animate-fade-in">
               <img
-                src={feedback2}
+                src={feedbackimage2}
+                alt="Depoimento de cliente satisfeita - mensagem Instagram"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="card-elegant overflow-hidden animate-fade-in">
+              <img
+                src={feedbackimage3}
+                alt="Depoimento de cliente satisfeita - mensagem Instagram"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="card-elegant overflow-hidden animate-fade-in">
+              <img
+                src={feedbackimage4}
                 alt="Depoimento de cliente satisfeita - mensagem Instagram"
                 className="w-full h-auto object-cover"
               />
@@ -47,7 +64,7 @@ const Feedbacks = () => {
                 controlsList="nodownload noremoteplayback"
                 preload="metadata"
                 className="w-full aspect-video">
-                <source src={feedback1} type="video/mp4" />
+                <source src={feedbackvideo1} type="video/mp4" />
                 Seu navegador não suporta vídeos HTML5.
               </video>
             </div>
