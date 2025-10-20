@@ -27,7 +27,7 @@ const Hero = () => {
               className="h-21 w-auto object-contain"
             />
           </div> */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-2 px-2 md:px-0">
+          <div className="grid grid-cols-1 mt-5 md:grid-cols-2 gap-4 md:gap-8 mb-2 px-2 md:px-0">
             <div className="overflow-hidden animate-fade-in mb-4">
               <div className="inset-0 bg-gradient-hero">
                 <img
@@ -37,15 +37,15 @@ const Hero = () => {
                 />
               </div>
             </div>
-            <div className="overflow-hidden animate-fade-in flex flex-col justify-center items-center">
-              <h1 className="text-5xl md:text-7xl font-bold">
-                <div className="mb-10 mt-2 flex justify-center">
-                  <img
-                    src={logo}
-                    alt="Studio Fernanda Rabelo - Beleza e Saúde"
-                    className="h-21 w-auto"
-                  />
-                </div>
+            <div className="overflow-hidden animate-fade-in flex flex-col justify-around items-center">
+              {/* <div className="mb-10 mt-2 flex justify-center">
+                <img
+                  src={logo}
+                  alt="Studio Fernanda Rabelo - Beleza e Saúde"
+                  className="h-21 w-auto"
+                />
+              </div> */}
+              <h1 className="text-7xl md:text-7xl font-bold">
                 <span className="text-gradient">Crio da Rabelo</span>
                 <br />
                 <span className="text-foreground">Elimine Gordura</span>
