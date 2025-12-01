@@ -8,11 +8,11 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-hero">
+      <div className="absolute inset-0 bg-gradient-hero animate-fade-in">
         <img
           src={equipamentoCrio}
           alt="Equipamento de criolipolise moderno"
-          className="w-full h-full object-cover opacity-20"
+          className="w-full h-full object-cover opacity-20 animate-scale-in"
         />
       </div>
 
@@ -20,12 +20,12 @@ const Hero = () => {
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto animate-fade-in-up">
         <div className="mb-6">
           {/* Logo do Studio */}
-          <div className="mb-4 mt-2 flex justify-center">
+          <div className="mb-4 mt-2 flex justify-center animate-scale-in">
             {/* <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-4 inline-block border border-primary/20"> */}
             <img
               src={logo}
               alt="Studio Fernanda Rabelo - Beleza e Saúde"
-              className="h-40 w-auto object-contain"
+              className="h-40 w-auto object-contain hover:scale-110 transition-transform duration-500"
             />
             {/* </div> */}
           </div>
@@ -40,23 +40,29 @@ const Hero = () => {
 
           {/* Fotos Antes e Depois no Hero */}
           <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 mb-6 border border-primary/20 animate-scale-in" style={{ animationDelay: "0.3s", animationFillMode: "backwards" }}>
-            <h3 className="text-lg font-semibold text-center mb-4 text-primary">Resultados Reais dos Nossos Clientes</h3>
+            <h3 className="text-lg font-semibold text-center mb-4 text-primary animate-fade-in-up" style={{ animationDelay: "0.4s", animationFillMode: "backwards" }}>Resultados Reais dos Nossos Clientes</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="text-center">
-                <img
-                  src={antesDepois1}
-                  alt="Resultado antes e depois da criolipolise - Cliente 1"
-                  className="w-full h-48 object-cover rounded-lg mb-2"
-                />
-                <p className="text-sm text-muted-foreground">Resultados reais em poucas semanas</p>
+              <div className="text-center group animate-slide-in-left" style={{ animationDelay: "0.5s", animationFillMode: "backwards" }}>
+                <div className="relative overflow-hidden rounded-lg mb-2">
+                  <img
+                    src={antesDepois1}
+                    alt="Resultado antes e depois da criolipolise - Cliente 1"
+                    className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+                <p className="text-sm text-muted-foreground animate-fade-in-up" style={{ animationDelay: "0.7s", animationFillMode: "backwards" }}>Resultados reais em poucas semanas</p>
               </div>
-              <div className="text-center">
-                <img
-                  src={antesDepois2}
-                  alt="Resultado antes e depois da criolipolise - Cliente 2"
-                  className="w-full h-48 object-cover rounded-lg mb-2"
-                />
-                <p className="text-sm text-muted-foreground">Transformação visível e duradoura</p>
+              <div className="text-center group animate-slide-in-right" style={{ animationDelay: "0.6s", animationFillMode: "backwards" }}>
+                <div className="relative overflow-hidden rounded-lg mb-2">
+                  <img
+                    src={antesDepois2}
+                    alt="Resultado antes e depois da criolipolise - Cliente 2"
+                    className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+                <p className="text-sm text-muted-foreground animate-fade-in-up" style={{ animationDelay: "0.8s", animationFillMode: "backwards" }}>Transformação visível e duradoura</p>
               </div>
             </div>
           </div>

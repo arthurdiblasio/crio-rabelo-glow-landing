@@ -25,16 +25,17 @@ const AntesDepois = () => {
               <img
                 src={antesDepois1}
                 alt="Antes e depois - resultado 1 da criolipolise"
-                className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               {/* <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
                 90 dias
               </div> */}
             </div>
             <div className="text-center">
-              <h3 className="text-xl font-semibold mb-2">Abdômen</h3>
-              <p className="text-muted-foreground">Redução de 4cm na circunferência</p>
-              <div className="flex justify-center items-center gap-2 mt-2">
+              <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">Abdômen</h3>
+              <p className="text-muted-foreground group-hover:translate-y-[-2px] transition-transform duration-300">Redução de 4cm na circunferência</p>
+              <div className="flex justify-center items-center gap-2 mt-2 group-hover:scale-105 transition-transform duration-300">
                 <span className="text-2xl">⭐</span>
                 <span className="text-sm text-primary font-medium">"Resultado surpreendente!"</span>
               </div>
@@ -47,16 +48,17 @@ const AntesDepois = () => {
               <img
                 src={antesDepois2}
                 alt="Antes e depois - resultado 2 da criolipolise"
-                className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               {/* <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
                 45 dias
               </div> */}
             </div>
             <div className="text-center">
-              <h3 className="text-xl font-semibold mb-2">Culote & Coxas</h3>
-              <p className="text-muted-foreground">Contorno corporal definido</p>
-              <div className="flex justify-center items-center gap-2 mt-2">
+              <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">Culote & Coxas</h3>
+              <p className="text-muted-foreground group-hover:translate-y-[-2px] transition-transform duration-300">Contorno corporal definido</p>
+              <div className="flex justify-center items-center gap-2 mt-2 group-hover:scale-105 transition-transform duration-300">
                 <span className="text-2xl">⭐</span>
                 <span className="text-sm text-primary font-medium">"Exatamente o que esperava!"</span>
               </div>
