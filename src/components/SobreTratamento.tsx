@@ -32,7 +32,7 @@ const SobreTratamento = () => {
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="text-gradient">Como Funciona</span>
             <br />
@@ -53,7 +53,11 @@ const SobreTratamento = () => {
         {/* Processo */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {beneficios.map((beneficio, index) => (
-            <div key={index} className="card-elegant text-center animate-fade-in">
+            <div 
+              key={index} 
+              className="card-elegant text-center animate-scale-in"
+              style={{ animationDelay: `${0.2 + index * 0.2}s`, animationFillMode: "backwards" }}
+            >
               <div className="flex justify-center mb-4">
                 {beneficio.icon}
               </div>
@@ -64,7 +68,7 @@ const SobreTratamento = () => {
         </div>
 
         {/* Diferenciais */}
-        <div className="bg-gradient-hero rounded-3xl p-8 md:p-12">
+        <div className="bg-gradient-hero rounded-3xl p-8 md:p-12 animate-fade-in" style={{ animationDelay: "0.8s", animationFillMode: "backwards" }}>
           <div className="text-center mb-8">
             <h3 className="text-3xl font-bold mb-4">
               <span className="text-gradient">Por que escolher</span> a Crio da Rabelo?
@@ -85,7 +89,7 @@ const SobreTratamento = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center mt-16 animate-fade-in">
+        <div className="text-center mt-16 animate-bounce-in" style={{ animationDelay: "1s", animationFillMode: "backwards" }}>
           <div className="bg-card rounded-2xl p-8 shadow-elegant border border-primary/20 max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold mb-4">
               <span className="text-gradient">Está pronta para a transformação?</span>
