@@ -7,7 +7,7 @@ const CTA = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           {/* Main CTA */}
-          <div className="animate-fade-in">
+          <div className="animate-fade-in-up">
             <h2 className="text-4xl md:text-6xl font-bold mb-6">
               <span className="text-gradient">Transforme Seu Corpo</span>
               <br />
@@ -21,7 +21,7 @@ const CTA = () => {
           </div>
 
           {/* Primary CTA Button */}
-          <div className="animate-fade-in mb-8">
+          <div className="animate-bounce-in mb-8" style={{ animationDelay: "0.3s", animationFillMode: "backwards" }}>
             <Button
               size="lg"
               className="btn-cta text-xl px-16 py-8 mb-4"

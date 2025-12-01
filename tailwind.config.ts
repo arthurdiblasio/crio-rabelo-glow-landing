@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Open Sans', 'sans-serif'],
-        heading: ['Source Sans 3', 'sans-serif'],
+        sans: ['Raleway', 'sans-serif'],
+        heading: ['DM Serif Display', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -104,6 +104,62 @@ export default {
             transform: "translateY(0)"
           }
         },
+        "fade-in-up": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(40px)"
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)"
+          }
+        },
+        "slide-in-left": {
+          "0%": {
+            opacity: "0",
+            transform: "translateX(-60px)"
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateX(0)"
+          }
+        },
+        "slide-in-right": {
+          "0%": {
+            opacity: "0",
+            transform: "translateX(60px)"
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateX(0)"
+          }
+        },
+        "scale-in": {
+          "0%": {
+            opacity: "0",
+            transform: "scale(0.9)"
+          },
+          "100%": {
+            opacity: "1",
+            transform: "scale(1)"
+          }
+        },
+        "bounce-in": {
+          "0%": {
+            opacity: "0",
+            transform: "scale(0.3)"
+          },
+          "50%": {
+            transform: "scale(1.05)"
+          },
+          "70%": {
+            transform: "scale(0.9)"
+          },
+          "100%": {
+            opacity: "1",
+            transform: "scale(1)"
+          }
+        },
         "pulse-glow": {
           "0%, 100%": {
             boxShadow: "0 0 20px hsl(30 28% 68% / 0.3)"
@@ -117,6 +173,11 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.6s ease-out",
+        "fade-in-up": "fade-in-up 0.8s ease-out",
+        "slide-in-left": "slide-in-left 0.7s ease-out",
+        "slide-in-right": "slide-in-right 0.7s ease-out",
+        "scale-in": "scale-in 0.6s ease-out",
+        "bounce-in": "bounce-in 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55)",
         "pulse-glow": "pulse-glow 2s ease-in-out infinite",
       },
     },

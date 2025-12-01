@@ -17,7 +17,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto animate-fade-in">
+      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto animate-fade-in-up">
         <div className="mb-6">
           {/* Logo do Studio */}
           <div className="mb-4 mt-2 flex justify-center">
@@ -39,7 +39,7 @@ const Hero = () => {
           </h1>
 
           {/* Fotos Antes e Depois no Hero */}
-          <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 mb-6 border border-primary/20">
+          <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 mb-6 border border-primary/20 animate-scale-in" style={{ animationDelay: "0.3s", animationFillMode: "backwards" }}>
             <h3 className="text-lg font-semibold text-center mb-4 text-primary">Resultados Reais dos Nossos Clientes</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="text-center">
@@ -68,7 +68,7 @@ const Hero = () => {
         </p>
 
         {/* Prova Social */}
-        <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-primary/20">
+        <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-primary/20 animate-bounce-in" style={{ animationDelay: "0.5s", animationFillMode: "backwards" }}>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
             <div className="flex flex-col items-center">
               <div className="text-3xl font-bold text-primary mb-2">100+</div>
@@ -86,7 +86,7 @@ const Hero = () => {
         </div>
 
         {/* CTA Button */}
-        <div className="animate-fade-in flex justify-center mt-12">
+        <div className="animate-scale-in flex justify-center mt-12" style={{ animationDelay: "0.7s", animationFillMode: "backwards" }}>
 
           <Button
             size="lg"
