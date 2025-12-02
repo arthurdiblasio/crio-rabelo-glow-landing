@@ -6,6 +6,7 @@ import Feedbacks from "@/components/Feedbacks";
 import FAQ from "@/components/FAQ";
 import Location from "@/components/Location";
 import CTA from "@/components/CTA";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const CriolipoiseLanding = () => {
   return (
@@ -18,6 +19,7 @@ const CriolipoiseLanding = () => {
       <FAQ />
       <Location />
       <CTA />
+      <WhatsAppButton />
     </div>
   );
 };
