@@ -4,6 +4,7 @@ import SobreTratamento from "@/components/SobreTratamento";
 import AntesDepois from "@/components/AntesDepois";
 import Feedbacks from "@/components/Feedbacks";
 import FAQ from "@/components/FAQ";
+import Location from "@/components/Location";
 import CTA from "@/components/CTA";
 
 const CriolipoiseLanding = () => {
@@ -15,6 +16,7 @@ const CriolipoiseLanding = () => {
       <AntesDepois />
       <Feedbacks />
       <FAQ />
+      <Location />
       <CTA />
     </div>
   );
