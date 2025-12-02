@@ -49,14 +49,14 @@ const Feedbacks = () => {
           </div>
 
           {/* Vídeos de Feedbacks */}
-          <div className="max-w-5xl mx-auto px-2 md:px-0">
+          <div className="max-w-4xl mx-auto px-2 md:px-0">
             <div className="card-elegant overflow-hidden animate-fade-in">
               <video
                 width="100%"
                 controls
                 controlsList="nodownload noremoteplayback"
                 preload="metadata"
-                className="w-full aspect-[16/10] md:aspect-video object-cover"
+                className="w-full aspect-video object-cover"
               >
                 <source src={feedbackvideo1} type="video/mp4" />
                 Seu navegador não suporta vídeos HTML5.
