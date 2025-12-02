@@ -41,13 +41,13 @@ const CTA = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-sm">
               <span className="font-medium">
-                <a href="https://wa.me/5531972416039?text=Olá! Quero agendar minha avaliação', '_blank'">
+                <a href="https://wa.me/5531972416039?text=Olá! Quero agendar minha avaliação'" target="_blank" rel="noopener noreferrer">
                   WhatsApp: (31) 97241-6039
                 </a>
               </span>
               <span className="hidden sm:block text-muted-foreground">•</span>
-              <span className="font-medium"><a href="wwww.studiofernandarabelo.com.br', '_blank'">
-                Site: wwww.studiofernandarabelo.com.br
+              <span className="font-medium"><a href="https://www.studiofernandarabelo.com.br" target="_blank" rel="noopener noreferrer">
+                Site: www.studiofernandarabelo.com.br
               </a></span>
             </div>
           </div>
