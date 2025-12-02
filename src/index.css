@@ -21,7 +21,7 @@ All colors MUST be HSL.
     --primary: 30 28% 68%;
     --primary-foreground: 0 0% 100%;
     --primary-dark: 30 28% 58%;
-    
+
     /* Marrom escuro para botões - #494036 */
     --btn-dark: 32 15% 25%;
     --btn-dark-foreground: 0 0% 100%;
@@ -44,9 +44,21 @@ All colors MUST be HSL.
     --ring: 30 28% 68%;
 
     /* Gradientes elegantes */
-    --gradient-primary: linear-gradient(135deg, hsl(30 28% 68%), hsl(30 28% 58%));
-    --gradient-secondary: linear-gradient(180deg, hsl(30 25% 95%), hsl(30 25% 90%));
-    --gradient-hero: linear-gradient(135deg, hsl(30 28% 68% / 0.1), hsl(30 25% 90% / 0.3));
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(30 28% 68%),
+      hsl(30 28% 58%)
+    );
+    --gradient-secondary: linear-gradient(
+      180deg,
+      hsl(30 25% 95%),
+      hsl(30 25% 90%)
+    );
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(30 28% 68% / 0.1),
+      hsl(30 25% 90% / 0.3)
+    );
 
     /* Sombras elegantes */
     --shadow-elegant: 0 8px 32px hsl(30 28% 68% / 0.12);
@@ -118,8 +130,13 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground font-sans;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-heading;
   }
 }
@@ -128,16 +145,20 @@ All colors MUST be HSL.
   .btn-cta {
     @apply bg-btn-dark text-btn-dark-foreground font-semibold py-4 px-8 rounded-xl shadow-elegant hover:shadow-strong transition-all duration-300 hover:scale-105 hover:bg-btn-dark/90;
   }
-  
+
   .section-gradient {
     @apply bg-gradient-secondary;
   }
-  
+
   .text-gradient {
     @apply bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent;
   }
-  
+
   .card-elegant {
     @apply bg-card rounded-2xl p-6 shadow-elegant border border-border/50 hover:shadow-strong transition-all duration-300;
+  }
+
+  .card-elegant-video {
+    @apply bg-card rounded-2xl p-2 shadow-elegant border border-border/50 hover:shadow-strong transition-all duration-300;
   }
 }

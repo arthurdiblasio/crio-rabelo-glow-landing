@@ -12,13 +12,13 @@ const HistoriaCrio = () => {
             Conheça a história por trás da Crio da Rabelo
           </p>
 
-          <div className="card-elegant overflow-hidden animate-scale-in mx-2 md:mx-0 max-w-4xl mx-auto" style={{ animationDelay: "0.4s", animationFillMode: "backwards" }}>
+          <div className="card-elegant-video overflow-hidden animate-scale-in mx-2 md:mx-0 max-w-4xl mx-auto" style={{ animationDelay: "0.4s", animationFillMode: "backwards" }}>
             <video
               width="100%"
               controls
               controlsList="nodownload noremoteplayback"
               preload="metadata"
-              className="w-full aspect-video object-cover"
+              className="w-full aspect-video object-cover h-svh"
             >
               <source src={historiaVideo} type="video/mp4" />
               Seu navegador não suporta vídeos HTML5.

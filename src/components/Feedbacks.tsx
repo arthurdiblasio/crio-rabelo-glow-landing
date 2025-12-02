@@ -50,7 +50,7 @@ const Feedbacks = () => {
 
           {/* Vídeos de Feedbacks */}
           <div className="max-w-4xl mx-auto px-2 md:px-0">
-            <div className="card-elegant overflow-hidden animate-fade-in">
+            <div className="card-elegant-video overflow-hidden animate-fade-in">
               <video
                 width="100%"
                 controls

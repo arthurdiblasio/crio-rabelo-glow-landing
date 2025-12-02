@@ -40,7 +40,7 @@ const Hero = () => {
 
           {/* Fotos Antes e Depois no Hero */}
           <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 mb-6 border border-primary/20 animate-scale-in" style={{ animationDelay: "0.3s", animationFillMode: "backwards" }}>
-            <h3 className="text-lg font-semibold text-center mb-4 text-primary animate-fade-in-up" style={{ animationDelay: "0.4s", animationFillMode: "backwards" }}>Resultados Reais dos Nossos Clientes</h3>
+            <h4 className="text-xl font-semibold text-center mb-4 text-primary animate-fade-in-up" style={{ animationDelay: "0.4s", animationFillMode: "backwards" }}>Resultados Reais dos Nossos Clientes</h4>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="text-center group animate-slide-in-left" style={{ animationDelay: "0.5s", animationFillMode: "backwards" }}>
                 <div className="relative overflow-hidden rounded-lg mb-2">
