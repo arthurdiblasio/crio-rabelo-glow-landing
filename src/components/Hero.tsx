@@ -102,9 +102,26 @@ const Hero = () => {
             Agendar minha avaliação
           </Button>
         </div>
-        <p className="text-sm pb-4 text-muted-foreground">
-          ✅ Consulta e avaliação gratuita • ✅ Espaço Aconchegante • ✅ Ótima Localização (Ao lado do ViaShopping)
-        </p>
+        <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm pb-4 text-muted-foreground">
+          <span className="flex items-center gap-2">
+            <span className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center">
+              <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            </span>
+            Consulta e avaliação gratuita
+          </span>
+          <span className="flex items-center gap-2">
+            <span className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center">
+              <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            </span>
+            Espaço Aconchegante
+          </span>
+          <span className="flex items-center gap-2">
+            <span className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center">
+              <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            </span>
+            Ótima Localização (Ao lado do ViaShopping)
+          </span>
+        </div>
       </div>
     </section>
   );

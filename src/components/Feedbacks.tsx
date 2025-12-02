@@ -49,22 +49,15 @@ const Feedbacks = () => {
           </div>
 
           {/* Vídeos de Feedbacks */}
-          {/* Para mais vídeos, trocar o cols-1 por cols-2 */}
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-4 md:gap-8 px-2 md:px-0">
-            <div className="overflow-hidden animate-fade-in">
-              {/* <iframe
-                className="w-full aspect-video"
-                src="https://www.youtube.com/embed/D8adzsFh1fE?modestbranding=1&rel=0&showinfo=0"
-                title="Depoimento de cliente - Vídeo 1"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe> */}
+          <div className="max-w-5xl mx-auto px-2 md:px-0">
+            <div className="card-elegant overflow-hidden animate-fade-in">
               <video
                 width="100%"
                 controls
                 controlsList="nodownload noremoteplayback"
                 preload="metadata"
-                className="w-full aspect-video">
+                className="w-full aspect-[16/10] md:aspect-video object-cover"
+              >
                 <source src={feedbackvideo1} type="video/mp4" />
                 Seu navegador não suporta vídeos HTML5.
               </video>
