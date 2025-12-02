@@ -28,6 +28,10 @@ export default {
           foreground: "hsl(var(--primary-foreground))",
           dark: "hsl(var(--primary-dark))",
         },
+        "btn-dark": {
+          DEFAULT: "hsl(var(--btn-dark))",
+          foreground: "hsl(var(--btn-dark-foreground))",
+        },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",

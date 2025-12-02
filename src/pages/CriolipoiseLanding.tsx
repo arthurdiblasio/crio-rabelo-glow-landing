@@ -3,6 +3,7 @@ import HistoriaCrio from "@/components/HistoriaCrio";
 import SobreTratamento from "@/components/SobreTratamento";
 import AntesDepois from "@/components/AntesDepois";
 import Feedbacks from "@/components/Feedbacks";
+import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 
 const CriolipoiseLanding = () => {
@@ -13,6 +14,7 @@ const CriolipoiseLanding = () => {
       <SobreTratamento />
       <AntesDepois />
       <Feedbacks />
+      <FAQ />
       <CTA />
     </div>
   );
