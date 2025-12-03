@@ -1,8 +1,8 @@
 import feedbackvideo1 from "@/assets/videos/feedback-crio-da-rabelo.mp4";
-import feedbackimage1 from "@/assets/feedback-1.jpg";
-import feedbackimage2 from "@/assets/feedback-2.jpg";
-import feedbackimage3 from "@/assets/feedback-3.jpg";
-import feedbackimage4 from "@/assets/feedback-4.jpg";
+import feedbackimage1 from "@/assets/feedback-1.webp";
+import feedbackimage2 from "@/assets/feedback-2.webp";
+import feedbackimage3 from "@/assets/feedback-3.webp";
+import feedbackimage4 from "@/assets/feedback-4.webp";
 
 const Feedbacks = () => {
   return (

@@ -1,5 +1,5 @@
-import antesDepoisReal1 from "@/assets/antes-depois-real-1.jpg";
-import antesDepoisReal2 from "@/assets/antes-depois-real-2.jpg";
+import antesDepoisReal1 from "@/assets/resultado-4.webp";
+import antesDepoisReal2 from "@/assets/resultado-3.webp";
 import { Button } from "./ui/button";
 
 const AntesDepois = () => {
@@ -53,7 +53,7 @@ const AntesDepois = () => {
             <div className="text-sm text-muted-foreground">Dias para começar a ver os resultados</div>
           </div>
           <div className="animate-bounce-in" style={{ animationDelay: "1s", animationFillMode: "backwards" }}>
-            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">-4cm</div>
+            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">-5cm</div>
             <div className="text-sm text-muted-foreground">Redução média</div>
           </div>
           <div className="animate-bounce-in" style={{ animationDelay: "1.15s", animationFillMode: "backwards" }}>

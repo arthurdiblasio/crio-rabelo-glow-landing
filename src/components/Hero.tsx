@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
-import equipamentoCrio from "@/assets/equipamento-crio.jpg";
-import antesDepois1 from "@/assets/antes-depois-real-1.jpg";
-import antesDepois2 from "@/assets/antes-depois-real-2.jpg";
+import equipamentoCrio from "@/assets/equipamento-crio.webp";
+import antesDepois1 from "@/assets/antes-depois-real-1.webp";
+import antesDepois2 from "@/assets/antes-depois-real-2.webp";
 import logo from "@/assets/logo-new.png";
 
 const Hero = () => {
