@@ -7,7 +7,7 @@ import {
 
 const faqData = [
   {
-    question: "O Crio da Rabelo dói?",
+    question: "A Crio da Rabelo dói?",
     answer: "Um leve desconforto no início devido ao frio, mas logo passa. O procedimento é tranquilo e totalmente suportável."
   },
   {
@@ -27,7 +27,7 @@ const faqData = [
     answer: "Não. As células eliminadas são destruídas definitivamente."
   },
   {
-    question: "O Crio da Rabelo é seguro?",
+    question: "A Crio da Rabelo é seguro?",
     answer: "Sim! Tecnologia de resfriamento controlado e aplicação por profissional qualificada."
   },
   {
@@ -69,14 +69,14 @@ const FAQ = () => {
             <span className="text-gradient">Perguntas Frequentes</span>
           </h2>
           <p className="text-xl text-muted-foreground text-center mb-12 animate-fade-in" style={{ animationDelay: "0.2s", animationFillMode: "backwards" }}>
-            Tire suas dúvidas sobre o Crio da Rabelo
+            Tire suas dúvidas sobre a Crio da Rabelo
           </p>
 
           <div className="animate-fade-in-up" style={{ animationDelay: "0.4s", animationFillMode: "backwards" }}>
             <Accordion type="single" collapsible className="space-y-4">
               {faqData.map((item, index) => (
-                <AccordionItem 
-                  key={index} 
+                <AccordionItem
+                  key={index}
                   value={`item-${index}`}
                   className="bg-card rounded-xl border border-border/50 px-6 shadow-elegant hover:shadow-strong transition-all duration-300 data-[state=open]:shadow-strong"
                 >
