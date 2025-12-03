@@ -30,7 +30,7 @@ const CTA = () => {
               Agendar minha avaliação
             </Button>
             <p className="text-sm text-muted-foreground">
-              Mais de 100 pacientes já transformaram seus corpos
+              Mais de 100 pacientes já transformaram sua autoestima com a Crio da Rabelo
             </p>
           </div>
 

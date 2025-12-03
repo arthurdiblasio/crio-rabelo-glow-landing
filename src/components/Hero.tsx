@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import equipamentoCrio from "@/assets/equipamento-crio.webp";
-import antesDepois1 from "@/assets/antes-depois-real-1.webp";
-import antesDepois2 from "@/assets/antes-depois-real-2.webp";
+import antesDepoisC from "@/assets/antes-depois-real-1-600.webp";
+import antesDepoisD from "@/assets/antes-depois-real-1-1200.webp";
+import antesDepois2C from "@/assets/antes-depois-real-2-600.webp";
+import antesDepois2D from "@/assets/antes-depois-real-2-1200.webp";
 import logo from "@/assets/logo-new.png";
 
 const Hero = () => {
@@ -9,11 +11,27 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with gradient overlay */}
       <div className="absolute inset-0 bg-gradient-hero animate-fade-in">
-        <img
+        {/* <img
           src={equipamentoCrio}
           alt="Equipamento de criolipolise moderno"
           className="w-full h-full object-cover opacity-20 animate-scale-in"
-        />
+        /> */}
+        <picture>
+          <source
+            srcSet={equipamentoCrio}
+            media="(max-width: 700px)"
+          />
+
+          <img
+            src={equipamentoCrio}
+            alt="Equipamento de criolipolise moderno"
+            width="1200"
+            height="800"
+            loading="eager"
+            fetchPriority="high"
+            className="w-full h-full object-cover opacity-10 animate-scale-in"
+          />
+        </picture>
       </div>
 
       {/* Content */}
@@ -44,22 +62,62 @@ const Hero = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="text-center group animate-slide-in-left" style={{ animationDelay: "0.5s", animationFillMode: "backwards" }}>
                 <div className="relative overflow-hidden rounded-lg mb-2">
-                  <img
+                  {/* <img
                     src={antesDepois1}
+                    width={578}
+                    height={463}
                     alt="Resultado antes e depois da criolipolise - Cliente 1"
                     className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
+                    fetchPriority="high"
+                    loading="eager"
+                  /> */}
+                  <picture>
+                    <source
+                      srcSet={antesDepoisC}
+                      media="(max-width: 700px)"
+                    />
+
+                    <img
+                      src={antesDepoisD}
+                      alt="Resultado antes e depois da criolipolise - Cliente 1"
+                      width="1200"
+                      height="800"
+                      loading="eager"
+                      fetchPriority="high"
+                      className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                  </picture>
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
                 <p className="text-sm text-muted-foreground animate-fade-in-up" style={{ animationDelay: "0.7s", animationFillMode: "backwards" }}>Resultados reais em poucas semanas</p>
               </div>
               <div className="text-center group animate-slide-in-right" style={{ animationDelay: "0.6s", animationFillMode: "backwards" }}>
                 <div className="relative overflow-hidden rounded-lg mb-2">
-                  <img
+                  {/* <img
                     src={antesDepois2}
+                    width={578}
+                    height={463}
+                    fetchPriority="high"
+                    loading="eager"
                     alt="Resultado antes e depois da criolipolise - Cliente 2"
                     className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
+                  /> */}
+                  <picture>
+                    <source
+                      srcSet={antesDepois2C}
+                      media="(max-width: 700px)"
+                    />
+
+                    <img
+                      src={antesDepois2D}
+                      alt="Resultado antes e depois da criolipolise - Cliente 2"
+                      width="1200"
+                      height="800"
+                      loading="eager"
+                      fetchPriority="high"
+                      className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                  </picture>
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
                 <p className="text-sm text-muted-foreground animate-fade-in-up" style={{ animationDelay: "0.8s", animationFillMode: "backwards" }}>Transformação visível e duradoura</p>

@@ -1,5 +1,7 @@
-import antesDepoisReal1 from "@/assets/resultado-4.webp";
-import antesDepoisReal2 from "@/assets/resultado-3.webp";
+import antesDepoisRealC1 from "@/assets/resultado-4-600.webp";
+import antesDepoisRealD1 from "@/assets/resultado-4-1200.webp";
+import antesDepoisRealC2 from "@/assets/resultado-3-600.webp";
+import antesDepoisRealD2 from "@/assets/resultado-3-1200.webp";
 import { Button } from "./ui/button";
 
 const AntesDepois = () => {
@@ -22,22 +24,51 @@ const AntesDepois = () => {
           {/* Resultado 1 */}
           <div className="card-elegant group animate-slide-in-left" style={{ animationDelay: "0.3s", animationFillMode: "backwards" }}>
             <div className="relative overflow-hidden rounded-xl">
-              <img
+              {/* <img
                 src={antesDepoisReal1}
+                width={578}
+                height={463}
                 alt="Antes e depois - resultado 1 da criolipolise"
                 className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
-              />
+              /> */}
+              <picture>
+                <source
+                  srcSet={antesDepoisRealC1}
+                  media="(max-width: 700px)"
+                />
+
+                <img
+                  src={antesDepoisRealD1}
+                  alt="Equipamento de criolipolise moderno"
+                  width="1200"
+                  height="800"
+                  loading="eager"
+                  fetchPriority="high"
+                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </picture>
             </div>
           </div>
 
           {/* Resultado 2 */}
           <div className="card-elegant group animate-slide-in-right" style={{ animationDelay: "0.5s", animationFillMode: "backwards" }}>
             <div className="relative overflow-hidden rounded-xl">
-              <img
-                src={antesDepoisReal2}
-                alt="Antes e depois - resultado 2 da criolipolise"
-                className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
-              />
+              <picture>
+                <source
+                  srcSet={antesDepoisRealC2}
+                  media="(max-width: 700px)"
+                />
+
+                <img
+                  src={antesDepoisRealD2}
+                  alt="Equipamento de criolipolise moderno"
+                  width="1200"
+                  height="800"
+                  loading="eager"
+                  fetchPriority="high"
+                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </picture>
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@ const Feedbacks = () => {
             <span className="text-gradient">Depoimentos Reais</span>
           </h2>
           <p className="text-xl text-muted-foreground text-center mb-12 px-2">
-            Veja o que nossas clientes dizem sobre a Crio da Rabelo
+            Veja o que nossas clientes dizem sobre nós
           </p>
 
           {/* Imagens de Feedbacks */}

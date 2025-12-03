@@ -53,8 +53,8 @@ const SobreTratamento = () => {
         {/* Processo */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {beneficios.map((beneficio, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="card-elegant text-center animate-scale-in"
               style={{ animationDelay: `${0.2 + index * 0.2}s`, animationFillMode: "backwards" }}
             >
@@ -109,7 +109,7 @@ const SobreTratamento = () => {
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <CheckCircle className="w-4 h-4 text-primary" />
-                Resultado garantido
+                Resultado em poucas semanas
               </div>
             </div>
           </div>
