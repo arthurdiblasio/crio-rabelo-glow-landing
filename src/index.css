@@ -22,8 +22,8 @@ All colors MUST be HSL.
     --primary-foreground: 0 0% 100%;
     --primary-dark: 30 28% 58%;
 
-    /* Marrom escuro para botões - #494036 */
-    --btn-dark: 32 15% 25%;
+    /* Marrom bem escuro para botões - chamativo */
+    --btn-dark: 25 30% 15%;
     --btn-dark-foreground: 0 0% 100%;
 
     /* Cor secundária - #EEE7DE convertido para HSL */
