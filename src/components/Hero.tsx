@@ -58,7 +58,7 @@ const Hero = () => {
 
           {/* Fotos Antes e Depois no Hero */}
           <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 mb-6 border border-primary/20 animate-scale-in" style={{ animationDelay: "0.3s", animationFillMode: "backwards" }}>
-            <h4 className="text-xl font-semibold text-center mb-4 text-primary animate-fade-in-up" style={{ animationDelay: "0.4s", animationFillMode: "backwards" }}>Resultados Reais dos Nossos Clientes</h4>
+            <h4 className="text-xl font-semibold text-center mb-4 text-primary animate-fade-in-up" style={{ animationDelay: "0.4s", animationFillMode: "backwards" }}>Resultados Reais das Nossos Pacientes</h4>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="text-center group animate-slide-in-left" style={{ animationDelay: "0.5s", animationFillMode: "backwards" }}>
                 <div className="relative overflow-hidden rounded-lg mb-2">
@@ -139,7 +139,7 @@ const Hero = () => {
               <p className="text-sm text-muted-foreground">Clientes Atendidas</p>
             </div>
             <div className="flex flex-col items-center">
-              <div className="text-3xl font-bold text-primary mb-2">95%</div>
+              <div className="text-3xl font-bold text-primary mb-2">98%</div>
               <p className="text-sm text-muted-foreground">Taxa de Satisfação</p>
             </div>
             <div className="flex flex-col items-center">
