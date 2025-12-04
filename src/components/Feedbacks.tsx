@@ -56,7 +56,7 @@ const Feedbacks = () => {
                 controls
                 controlsList="nodownload noremoteplayback"
                 preload="metadata"
-                className="w-full aspect-video object-cover"
+                className="w-full aspect-video"
               >
                 <source src={feedbackvideo1} type="video/mp4" />
                 Seu navegador não suporta vídeos HTML5.
